@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>商家——列表</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<style>
+		.category_ul { width:850px;  overflow:hidden; margin:5px 0; }
+		.category_ul li { width:90px; height:30px; line-height:30px; float:left; margin:5px 10px; overflow:hidden; background:#ebebe4;}
+		.category_ul li a { color:black;}
+	</style>
+</head>
+
+<body>
+	{include file="subbar.html"}
+	<div style="width:900px; height:auto; margin:0 auto; border:1px solid black;">
+		<div style="width:880px; height:40px; line-height:40px; padding:0 0 0 20px; background:#c4f7b3;">
+			<a href="payShopAddForm.php">添加商家新类别</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font>（点击类别会删除类别，慎重！）</font>
+		</div>
+		<ul class="category_ul">
+			{foreach from=$result_arr key=key item=value}
+				<li><a href="payShopDelete.php?catid={$value['pay_shop_id']}">{$value['pay_shop_name']}</a></li>
+			{/foreach}
+		</ul>
+	</div>
+</body>
+</html>
