@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>calculate</title>
+	<script src="jquery.js"></script>
+	<script>
+		function makeHeight(){
+			var w = $("#widthInput").val();
+			$("#height").html(w*214/285);
+		}
+		function makeWidth(){
+			var w = $("#heightInput").val();
+			$("#width").html(w*285/214);
+		}
+	</script>
+</head>
+<body>
+	<div style="width:100%; height:100px; float:left;">
+		<div style=" height:100px; float:left; margin:0 10px;">
+			宽：285px
+		</div>
+		<div style=" height:100px; float:left; margin:0 10px;">
+			高：214px
+		</div>
+		<div style=" height:100px; float:left; margin:0 10px;">
+			图宽：<input type="text" name="width" value="" id="widthInput">
+		</div>
+		<div style="  float:left; padding:0 10px; cursor:pointer; margin:0 10px; background:blue; color:white;" onclick="makeHeight()">
+			计算
+		</div>
+		<div id="height" style=" height:100px; float:left; margin:0 10px;">
+			
+		</div>
+	</div>
+	<div style="width:100%; height:100px; float:left;">
+		<div style=" height:100px; float:left; margin:0 10px;">
+			宽：285px
+		</div>
+		<div style=" height:100px; float:left; margin:0 10px;">
+			高：214px
+		</div>
+		<div style=" height:100px; float:left; margin:0 10px;">
+			图高：<input type="text" name="height" value="" id="heightInput">
+		</div>
+		<div style="  float:left; padding:0 10px; cursor:pointer; margin:0 10px; background:blue; color:white;" onclick="makeWidth()">
+			计算
+		</div>
+		<div id="width" style=" height:100px; float:left; margin:0 10px;">
+			
+		</div>
+	</div>
+</body>
+</html>
