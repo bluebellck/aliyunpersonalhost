@@ -1,8 +1,8 @@
 <?php
 $db_base="mysql";
-$db_host="qdm114540208.my3w.com";
+$db_host="106.14.33.13";
 $db_name="qdm114540208_db";
-$db_user="qdm114540208";
+$db_user="root";
 $db_pwd="88446512";
 $db_pconnect = '0';
 $db_tb_pre="wacai_";
