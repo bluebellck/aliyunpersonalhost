@@ -1,7 +1,0 @@
-<VirtualHost *:80>
-ServerName sanliancun.com
-ServerAlias *.sanliancun.com
-DocumentRoot '/var/www/sanliancun'
-ErrorLog '/var/log/apache2/sanliancun_errors.log'
-CustomLog '/var/log/apache2/sanliancun_accesses.log' common
-</VirtualHost>
